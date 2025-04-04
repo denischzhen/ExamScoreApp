@@ -1,0 +1,28 @@
+﻿<Window x:Class="ExamScoreApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamScoreApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="300">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Баллы за задание 1 (0-10)" Margin="5"/>
+            <TextBox x:Name="Task1ScoreField" Width="200" Margin="5"/>
+
+            <TextBlock Text="Баллы за задание 2 (0-50)" Margin="5"/>
+            <TextBox x:Name="Task2ScoreField" Width="200" Margin="5"/>
+
+            <TextBlock Text="Баллы за задание 3 (0-30)" Margin="5"/>
+            <TextBox x:Name="Task3ScoreField" Width="200" Margin="5"/>
+
+            <TextBlock Text="Баллы за задание 4 (0-10)" Margin="5"/>
+            <TextBox x:Name="Task4ScoreField" Width="200" Margin="5"/>
+
+            <Button Content="Подсчитать" Width="200" Click="CalculateButton_Click" Margin="5"/>
+
+            <TextBlock x:Name="ResultTextField" Width="200" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
